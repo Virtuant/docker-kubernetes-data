@@ -6,10 +6,10 @@ services:
     ports:
      - "5000:5000"
     volumes:
-      - type: volume
-    source: cache
-    target: /code
-    volume:
-      nocopy: true
+     - type: volume
+        source: cache
+        target: /code
+        volume:
+            nocopy: true
   redis:
     image: "redis:alpine"
