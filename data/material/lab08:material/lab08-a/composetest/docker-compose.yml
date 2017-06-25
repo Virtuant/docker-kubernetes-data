@@ -6,6 +6,6 @@ services:
     ports:
      - "5000:5000"
     volumes:
-     - ./cache:/code
+     - .:/code
   redis:
     image: "redis:alpine"
